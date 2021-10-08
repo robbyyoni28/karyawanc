@@ -18,11 +18,11 @@ int WinMain()
     vector<string> bookarray;
 
     do{
-        cout << " a. Add a book" << endl;
-        cout << " b. Remove a book" << endl;
-        cout << " c. Empty database" << endl;
-        cout << " d. show number of books" << endl;
-        cout << " e. show all of books" << endl;
+        cout << " a. Tambah Data karyawan " << endl;
+        cout << " b. Hapus Data Karyawan" << endl;
+        cout << " c. Destroy Database" << endl;
+        cout << " d. Tampilkan id Karyawan" << endl;
+        cout << " e. Tampilkan semua Data Karyawan" << endl;
         cout << "f . quit" << endl;
         cin >> pilihan;
         if(pilihan == 'f' ) {
