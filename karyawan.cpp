@@ -30,9 +30,9 @@ int WinMain()
         }
         else{
             if(pilihan == 'a'){
-                cout << "please enter name of book: " ;
+                cout << "masukkan divisi penempatan karyawan: " ;
                 cin >> divisi;
-                cout << "please enter author name :";
+                cout << "masukkan nama karyawan :";
                 cin >> nama_karyawan;
                 fullbook = divisi + " " + nama_karyawan;
                 bookarray.push_back(fullbook);
