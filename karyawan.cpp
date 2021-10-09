@@ -2,7 +2,15 @@
 #include <vector>
 #include <algorithm>
 #include<array>
+#include <conio.h>
+#include <variant>
+
+#include<stdlib.h>
+
+
 using namespace std;
+
+
 
 int WinMain()
 {
@@ -12,12 +20,14 @@ int WinMain()
     char pilihan;
     string divisi;
     string hapus_data;
+    string update_data;
     int countnum;
     string nama_karyawan;
     string nohp;
     char jenkel;
     string semua_data;
     vector<string> arraykaryawan;
+    
 
     do{
         cout << " a. Tambah Data karyawan " << endl;
@@ -41,6 +51,10 @@ int WinMain()
                 cin >> nohp;
                 cout << "jenis kelamin L/P  :" ;
                 cin >> jenkel;
+                
+                
+                
+               
                 semua_data = divisi + " " + nama_karyawan + " " + nohp + " " + jenkel;
                 arraykaryawan.push_back(semua_data);
                 cout << "data karyawan berhasil ditambahkan" << endl;
@@ -72,7 +86,18 @@ int WinMain()
                 cout << " " << endl;
             }else if (pilihan == 'f')
             {
-                cout << "hayy";
+                cout << "pilih nama karyawan yang akan diupdate: " ;
+                cin >> update_data;
+                for(int i = 0; i < arraykaryawan.size() ; i++){
+                    if (arraykaryawan[i].find(update_data) != std::string::npos) {
+                        cout<<"divisi karyawan\t: ";
+                        cin>>arraykaryawan[i];
+                        cout<<"nama karyawan\t: ";
+                        cin>>arraykaryawan[i];
+                        break;
+                    }
+                }
+
             }
             
 
