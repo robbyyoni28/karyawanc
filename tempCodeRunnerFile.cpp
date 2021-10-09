@@ -28,7 +28,7 @@ int WinMain()
         cout << " f. update Data Karyawan" << endl;
         cout << "g . Exit" << endl;
         cin >> pilihan;
-        if(pilihan == 'g' ) {
+        if(pilihan == 'f' ) {
             printf("Terminating the program...");
         }
         else{
